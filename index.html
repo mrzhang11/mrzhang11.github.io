@@ -2,27 +2,58 @@
 layout: default
 ---
 
-<div class="home">
- <div class="top card">
-    <a class="email" href="mailto:{{site.email}}">{{site.email}}</a>
-    <p class="description">{{ site.description }}</p>
-    <a href="about" class="btn">Read More</a>
-  </div>
-  <div class="posts card">
-      <div class="card-content white-text">
-      <span class="card-title">Posts</span>
 
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>            
-          </li>
-        {% endfor %}
-      </ul>
 
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-      </div>
-   </div>
+<!-- One -->
+    <section id="one">
+        <div class="container">
+            <header class="major">
+                <h2>Welcome to my personal webpage!</h2>
+            </header>
+            <p>I received my Bacholer's degree from Harbin Engineering University and Master's degree from Chinese Academy of Sciences in 2014 and 2017, respectively.
+                I worked as a Research and Development Engineer at Baidu from July 2017 to February 2018. In June 2018, I joined the Using.AI (a startup), where I am now an Algorithm Engineer.
+                My research interests lie at <strong>machine learning <strong> and </strong>computer vision</strong>. </p>
+            <p>There are more and more unknown got to my head with increase of my experience. By combining theoretical study with industry, I am also more aware of the value of excellent research findings.
+                I hope that I can play a leadership role in technological innovation after furthering my study.  </p>
+        </div>
+    </section>
 
-</div>
+<!-- Two -->
+    <section id="two">
+        <div class="container">
+            <h3>Academic Skills</h3>
+            <ul class="feature-icons">
+                <li class="fa-code">C, C++, Python, PHP, Java, MATLAB, SQL</li>
+                <li class="fa-cubes">Tensorflow, Scikit-Learn, OpenCV, Elasticsearch, Redis</li>
+                <li class="fa-book">IELTS overall band score of 7 </br></br></li>
+                <li class="fa-bolt">motivation, diligence and a critical mind</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- Three -->
+    <section id="three">
+        <div class="container">
+            <h3>List of Research Projects</h3>
+            <p>• "Automatic Diagnose of Diabetic Retinopathy", 2018, Using.AI   </br>
+                • "Building Extraction from Polarimetric Synthetic Aperture Radar Images", 2016-2017, Chinese Academy of Sciences</br>
+                • "Military Object Detection in Airborne SAR Images", 2015, Chinese Academy of Sciences    </br>
+                • "Acoustic Vector Array Robust Beam Forming", 2014, Harbin Engineering University
+            </p>
+        </div>
+    </section>
+
+<!-- Four -->
+    <section id="four">
+        <div class="container">
+            <h3>Selected Honors&Awards</h3>
+            <p>• DingXiu scholarship (Top 5%) , University of Chinese Academy of Sciences, 2015 </br>
+                • Merit Student (Top 5%), University of Chinese Academy of Sciences, 2015</br>
+                • Excellent Graduate (Top 1%), Harbin Engineering University, 2014    </br>
+                • Merit Student (Top 1%), Heilongjiang Province, 2013    </br>
+                • National Scholarship (Top 1%), Nationwide, 2012    </br>
+                • First Prize Academic Scholarship(Top 5%), Harbin Engineering University, 2011-2013
+            </p>
+        </div>
+    </section>
+
